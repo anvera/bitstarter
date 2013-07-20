@@ -7,6 +7,13 @@
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
+      /* Large Desktop */
+      @media (min-width:980px) {
+        body {
+          padding-top: 60px;
+        }
+      }
+
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -40,18 +47,27 @@
    </style>
 </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
+
+    <!-- Mobile-friendly navbar adapted from example -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="cointainer">
+	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	  </button>
+	  <a class="brand" href="#">Bitstarter</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	  </div><!--/.nav-collapse -->
 	</div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="row heading">
 	<div class="span12">
 	  <h1>Bitstarter Title</h1>
